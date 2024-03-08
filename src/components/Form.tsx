@@ -2,6 +2,7 @@ import { Formik, Form as FormFormik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 import { FormData } from '../../interfaces/FormData';
+import { useShoppingCart } from '../context/ShoppingCardContext';
 
 const validationSchema = Yup.object<FormData>({
   name: Yup.string().required('Name is required'),
@@ -13,6 +14,7 @@ const validationSchema = Yup.object<FormData>({
 });
 
 const Form = () => {
+  const { cartItems } = useShoppingCart();
   const initialValues: FormData = {
     name: '',
     email: '',
@@ -20,8 +22,37 @@ const Form = () => {
     address: '',
   };
 
-  const onSubmit = (values: FormData) => {
-    console.log(values);
+  const onSubmit = async (values: FormData, helpers: any) => {
+    try {
+      const userResponse = await fetch(
+        'https://med-backend-rapb.onrender.com/users',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(values),
+        }
+      );
+
+      const userData = await userResponse.json();
+
+      const orderResponse = await fetch(
+        'https://med-backend-rapb.onrender.com/orders',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ userId: userData._id, items: cartItems }),
+        }
+      );
+    } catch (error) {
+      console.error('Error creating user or order:', error);
+    } finally {
+      localStorage.clear();
+      helpers.resetForm();
+    }
   };
 
   return (

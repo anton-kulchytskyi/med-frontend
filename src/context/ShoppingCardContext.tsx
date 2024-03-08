@@ -27,7 +27,7 @@ export function useShoppingCart() {
 export function ShoppingCartProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const [cartItems, setCartItems] = useLocalStorage<CartItem[]>(
-    'shopping-card',
+    'shopping-cart',
     []
   );
 

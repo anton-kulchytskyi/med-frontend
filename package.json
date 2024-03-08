@@ -1,14 +1,11 @@
 {
   "name": "med-frontend",
-  "homepage": "https://anton-kulchytskyi.github.io/med-frontend/",
   "private": true,
   "version": "1.0.0",
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
-    "preview": "rsbuild preview",
-    "predeploy": "rsbuild build",
-    "deploy": "gh-pages -d dist"
+    "preview": "rsbuild preview"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -16,7 +13,6 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.51.0",
     "react-query": "^3.39.3",
     "react-router-dom": "^6.22.2",
     "yup": "^1.4.0"
@@ -26,7 +22,6 @@
     "@rsbuild/plugin-react": "^0.4.12",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
-    "gh-pages": "^6.1.1",
     "typescript": "^5.3.0"
   }
 }
