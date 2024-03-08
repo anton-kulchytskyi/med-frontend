@@ -1,0 +1,199 @@
+/*! core-js/modules/esnext.iterator.constructor.js */
+
+/*! ./context/ShoppingCardContext */
+
+/*! react/jsx-runtime */
+
+/*! react-bootstrap */
+
+/*! react-bootstrap */
+
+/*! react-bootstrap */
+
+/*! core-js/modules/esnext.async-iterator.reduce.js */
+
+/*! core-js/modules/esnext.iterator.filter.js */
+
+/*! ./pages/Store */
+
+/*! ./App.css */
+
+/*! ../components/PharmaciesList */
+
+/*! core-js/modules/esnext.async-iterator.map.js */
+
+/*! react/jsx-runtime */
+
+/*! react-query */
+
+/*! ./App */
+
+/*! react/jsx-runtime */
+
+/*! core-js/modules/esnext.json.parse.js */
+
+/*! core-js/modules/esnext.async-iterator.some.js */
+
+/*! core-js/modules/esnext.async-iterator.map.js */
+
+/*! ../utils/formatCurrency */
+
+/*! ./MedicineItem */
+
+/*! react-bootstrap */
+
+/*! core-js/modules/esnext.iterator.some.js */
+
+/*! ./pages/Order */
+
+/*! ./components/Navigation */
+
+/*! react/jsx-runtime */
+
+/*! react */
+
+/*! react/jsx-runtime */
+
+/*! ../components/MedicinesList */
+
+/*! react/jsx-runtime */
+
+/*! ../context/ShoppingCardContext */
+
+/*! core-js/modules/esnext.iterator.map.js */
+
+/*! react-bootstrap */
+
+/*! core-js/modules/esnext.async-iterator.filter.js */
+
+/*! react/jsx-runtime */
+
+/*! ./CartItem */
+
+/*! ./ShoppingCartList */
+
+/*! core-js/modules/esnext.iterator.reduce.js */
+
+/*! react-dom/client */
+
+/*! react-query */
+
+/*! ./Loading */
+
+/*! react-router-dom */
+
+/*! ../utils/formatCurrency */
+
+/*! react-router-dom */
+
+/*! core-js/modules/esnext.async-iterator.find.js */
+
+/*! react-bootstrap */
+
+/*! ../context/ShoppingCardContext */
+
+/*! react/jsx-runtime */
+
+/*! core-js/modules/esnext.iterator.find.js */
+
+/*! ../components/ShoppingCartList */
+
+/*! core-js/modules/esnext.iterator.map.js */
+
+/*! react/jsx-runtime */
+
+/*! react-router-dom */
+
+/*! core-js/modules/esnext.iterator.filter.js */
+
+/*! ../hooks/useLocaleStorage */
+
+/*! yup */
+
+/*! react/jsx-runtime */
+
+/*! core-js/modules/esnext.iterator.map.js */
+
+/*! core-js/modules/esnext.iterator.find.js */
+
+/*! react */
+
+/*! react */
+
+/*! react/jsx-runtime */
+
+/*! core-js/modules/esnext.async-iterator.filter.js */
+
+/*! core-js/modules/esnext.iterator.map.js */
+
+/*! react-bootstrap */
+
+/*! ../context/ShoppingCardContext */
+
+/*! react-bootstrap */
+
+/*! formik */
+
+/*! bootstrap/dist/css/bootstrap.min.css */
+
+/*! ../context/ShoppingCardContext */
+
+/*! react-query */
+
+/*! react */
+
+/*! react-bootstrap */
+
+/*! core-js/modules/esnext.iterator.constructor.js */
+
+/*! react-bootstrap */
+
+/*! react/jsx-runtime */
+
+/*! ../utils/fetchData */
+
+/*! ../utils/formatCurrency */
+
+/*! core-js/modules/esnext.async-iterator.reduce.js */
+
+/*! core-js/modules/esnext.async-iterator.map.js */
+
+/*! ../utils/fetchData */
+
+/*! ../context/ShoppingCardContext */
+
+/*! core-js/modules/esnext.iterator.filter.js */
+
+/*! ./PharmaceItem */
+
+/*! react/jsx-runtime */
+
+/*! ../components/ShoppingCart */
+
+/*! react/jsx-runtime */
+
+/*! react-bootstrap */
+
+/*! ../utils/fetchData */
+
+/*! core-js/modules/esnext.async-iterator.find.js */
+
+/*! core-js/modules/esnext.async-iterator.filter.js */
+
+/*! core-js/modules/esnext.iterator.constructor.js */
+
+/*! ../components/Form */
+
+/*! react-bootstrap */
+
+/*! core-js/modules/esnext.async-iterator.map.js */
+
+/*! ./pages/Home */
+
+/*! react/jsx-runtime */
+
+/*! react-query */
+
+/*! react/jsx-runtime */
+
+/*! core-js/modules/esnext.iterator.reduce.js */
