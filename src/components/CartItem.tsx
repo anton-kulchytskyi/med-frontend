@@ -1,18 +1,16 @@
 import { Button, Stack } from 'react-bootstrap';
 import { useShoppingCart } from '../context/ShoppingCardContext';
-// import storeItems from "../data/items.json"
 import { formatCurrency } from '../utils/formatCurrency';
 import { Medicine } from '../../interfaces/Medicine';
 
-// type CartItemProps = {
-//   id: number;
-//   quantity: number;
-// };
-
-export function CartItem({ name, price }: Medicine) {
-  const { removeFromCart } = useShoppingCart();
-  // const item = storeItems.find((i) => i.id === id);
-  // if (item == null) return null;
+export function CartItem({ _id, name, price }: Medicine) {
+  const {
+    getItemQuantity,
+    increaseCartQuantity,
+    decreaseCartQuantity,
+    removeFromCart,
+  } = useShoppingCart();
+  const quantity = getItemQuantity(_id);
 
   return (
     <Stack
@@ -20,38 +18,31 @@ export function CartItem({ name, price }: Medicine) {
       gap={2}
       className="d-flex align-items-center"
     >
-      {name} {formatCurrency(price)}
-      {/* <img
-        src={item.imgUrl}
-        style={{ width: '125px', height: '75px', objectFit: 'cover' }}
-      />
-      <div className="me-auto">
-        <div>
-          {item.name}{' '}
-          {quantity > 1 && (
-            <span
-              className="text-muted"
-              style={{ fontSize: '.65rem' }}
-            >
-              x{quantity}
-            </span>
-          )}
-        </div>
-        <div
-          className="text-muted"
-          style={{ fontSize: '.75rem' }}
-        >
-          {formatCurrency(item.price)}
-        </div>
+      <div className="p-2">
+        {name} x {quantity}
       </div>
-      <div> {formatCurrency(item.price * quantity)}</div>
+      <div className="p-2  ms-auto">{formatCurrency(price)}</div>
+      <Button
+        variant="outline-primary"
+        size="sm"
+        onClick={() => increaseCartQuantity(_id)}
+      >
+        +
+      </Button>
+      <Button
+        variant="outline-primary"
+        size="sm"
+        onClick={() => decreaseCartQuantity(_id)}
+      >
+        -
+      </Button>
       <Button
         variant="outline-danger"
         size="sm"
-        onClick={() => removeFromCart(item.id)}
+        onClick={() => removeFromCart(_id)}
       >
         &times;
-      </Button> */}
+      </Button>
     </Stack>
   );
 }

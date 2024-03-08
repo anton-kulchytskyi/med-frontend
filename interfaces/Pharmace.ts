@@ -1,6 +1,5 @@
 export interface Pharmace {
-  id: string;
+  _id: string;
   name: string;
   address: string;
-  medicines: string[];
 }
