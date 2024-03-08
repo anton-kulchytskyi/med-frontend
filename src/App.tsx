@@ -7,6 +7,7 @@ import './App.css';
 import Navigation from './components/Navigation';
 import { ShoppingCartProvider } from './context/ShoppingCardContext';
 import Order from './pages/Order';
+import OrderList from './pages/OrderList';
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,10 @@ const App = () => {
             <Route
               path="/order"
               element={<Order />}
+            />
+            <Route
+              path="/order-list"
+              element={<OrderList />}
             />
           </Routes>
         </Container>

@@ -29,6 +29,12 @@ const Navigation = () => {
           >
             Order
           </Nav.Link>
+          <Nav.Link
+            to="/order-list"
+            as={NavLink}
+          >
+            Order List
+          </Nav.Link>
         </Nav>
         <Button
           onClick={openCart}
